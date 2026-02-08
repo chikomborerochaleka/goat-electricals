@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goat Electricals & Solar Installation</title>
+  <meta name="description" content="Goat Electricals & Solar Installation – Reliable electrical wiring, solar system design, installation, and maintenance." />
+  <style>
+    :root {
+      --bg-dark: #0f172a;
+      --bg-card: #111827;
+      --primary: #22c55e;
+      --secondary: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #020617, var(--bg-dark)); color: var(--text);
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+    header {
+      position: sticky; top: 0; backdrop-filter: blur(8px);
+      background: rgba(2,6,23,.7); border-bottom: 1px solid rgba(255,255,255,.06);
+      z-index: 10;
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand { display: flex; gap: .6rem; align-items: center; font-weight: 800; letter-spacing: .3px; }
+    .logo {
+      width: 36px; height: 36px; border-radius: 10px; background:
+      radial-gradient(circle at 30% 30%, var(--secondary), var(--primary));
+      box-shadow: 0 0 24px rgba(34,197,94,.45);
+    }
+    .nav a { margin-left: 1rem; color: var(--muted); }
+    .nav a:hover { color: var(--text); }
+
+    .hero { padding: 4rem 0 3rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 2rem; }
+    @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } }
+    .badge { display: inline-block; padding: .35rem .7rem; border-radius: 999px; background: rgba(56,189,248,.15); color: var(--secondary); font-weight: 600; }
+    h1 { font-size: clamp(2rem, 4vw, 3rem); margin: .75rem 0; }
+    p.lead { color: var(--muted); font-size: 1.05rem; }
+    .cta { display: flex; gap: .8rem; margin-top: 1.2rem; }
+    .btn {
+      padding: .75rem 1rem; border-radius: .75rem; border: 1px solid transparent; font-weight: 700; cursor: pointer;
+      background: linear-gradient(135deg, var(--primary), #16a34a); color: #052e16;
+      box-shadow: 0 10px 30px rgba(34,197,94,.35);
+    }
+    .btn.secondary { background: transparent; color: var(--text); border-color: rgba(255,255,255,.2); box-shadow: none; }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border: 1px solid rgba(255,255,255,.08); border-radius: 1rem; padding: 1.25rem;
+    }
+
+    section { padding: 3rem 0; }
+    .grid { display: grid; gap: 1rem; }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 900px) { .grid-3, .grid-2 { grid-template-columns: 1fr; } }
+
+    .service h3 { margin: .25rem 0 .35rem; }
+    .icon {
+      width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center;
+      background: rgba(34,197,94,.15); color: var(--primary); font-weight: 900;
+    }
+
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    @media (max-width: 900px) { .stats { grid-template-columns: 1fr 1fr; } }
+    .stat { text-align: center; }
+    .stat strong { font-size: 1.6rem; }
+
+    form input, form textarea {
+      width: 100%; padding: .7rem .8rem; border-radius: .6rem; background: #020617;
+      border: 1px solid rgba(255,255,255,.15); color: var(--text);
+    }
+    form textarea { min-height: 120px; }
+    form button { margin-top: .6rem; }
+
+    footer { padding: 2rem 0; border-top: 1px solid rgba(255,255,255,.08); color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo"></div>
+        <span>Goat Electricals & Solar</span>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Reliable • Efficient • Affordable</span>
+          <h1>Powering Homes & Businesses with Smart Electrical and Solar Solutions</h1>
+          <p class="lead">Professional electrical wiring, solar system design, installation, upgrades, and maintenance. Clean energy that saves you money.</p>
+          <div class="cta">
+            <a class="btn" href="#contact">Get a Free Quote</a>
+            <a class="btn secondary" href="#services">Our Services</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Why Choose Us</h3>
+          <ul>
+            <li>✔ Certified technicians</li>
+            <li>✔ Quality components & workmanship</li>
+            <li>✔ On-time project delivery</li>
+            <li>✔ After-installation support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="grid grid-3">
+          <div class="card service">
+            <div class="icon">⚡</div>
+            <h3>Electrical Installations</h3>
+            <p>Residential & commercial wiring, DB boards, fault finding, upgrades, and compliance.</p>
+          </div>
+          <div class="card service">
+            <div class="icon">☀️</div>
+            <h3>Solar Systems</h3>
+            <p>Off‑grid, hybrid, and backup solar solutions designed for your energy needs.</p>
+          </div>
+          <div class="card service">
+            <div class="icon">🔧</div>
+            <h3>Maintenance & Repairs</h3>
+            <p>System inspections, troubleshooting, battery replacement, and performance optimization.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container grid grid-2">
+        <div class="card">
+          <h2>About Goat Electricals & Solar</h2>
+          <p>We are a customer‑focused electrical and solar installation company committed to safe, efficient, and sustainable energy solutions.</p>
+        </div>
+        <div class="card">
+          <div class="stats">
+            <div class="stat"><strong>100+</strong><br/>Installations</div>
+            <div class="stat"><strong>5★</strong><br/>Client Satisfaction</div>
+            <div class="stat"><strong>24/7</strong><br/>Support</div>
+            <div class="stat"><strong>10+</strong><br/>Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Recent Projects</h2>
+        <div class="grid grid-3">
+          <div class="card">Residential Solar Backup System</div>
+          <div class="card">Commercial Electrical Rewiring</div>
+          <div class="card">Hybrid Solar Installation</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container grid grid-2">
+        <div class="card">
+          <h2>Contact Us</h2>
+          <p>Request a quote or ask a question. We’ll get back to you quickly.</p>
+          <p><strong>Phone:</strong> +263 7XX XXX XXX</p>
+          <p><strong>Email:</strong> info@goatelectricals.com</p>
+          <p><strong>Location:</strong> Zimbabwe</p>
+        </div>
+        <div class="card">
+          <form>
+            <input placeholder="Your Name" required />
+            <br/><br/>
+            <input placeholder="Phone or Email" required />
+            <br/><br/>
+            <textarea placeholder="Tell us about your project"></textarea>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Goat Electricals & Solar Installation. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
